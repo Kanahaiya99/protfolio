@@ -51,7 +51,7 @@
 .main_conatiner {
     display: flex;
     justify-content: space-between;
-    height: 50vh;
+    height: 70vh;
     align-items: center;
 }
 
@@ -64,10 +64,106 @@
     height: 300px;
     width: 300px;
     object-fit: cover;
+    object-position: top;
     border: 5px solid #fff;
+}
+
+.header_image:hover {
+    transform: scale(1.3);
+    transition: all 0.5s ease;
 }
 
 .first_header {
     font-size: 55px;
     font-weight: bold;
+}
+
+.ab_header {
+    border-radius: 40px;
+    background: #e5e5ed;
+    padding: 3px 13px;
+    color: #828488;
+    font-weight: bold;
+}
+
+.about_header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.image3_header {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.aboutme_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+}
+
+.about_para {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.secondaboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 49%;
+}
+
+.aboout_footer {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.list_about {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-around;
+    }
+
+    .first {
+        width: 80% !important;
+    }
+
+    .first_mid {
+        text-align: center;
+    }
+
+    .first_bottom {
+        text-align: center;
+    }
+
+    .first_header {
+        font-size: 25px;
+    }
+
+    .main_conatiner {
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+    .aboutme_wrapper {
+        margin: 0px !important;
+        flex-direction: column;
+    }
 }
